@@ -1,0 +1,33 @@
+Descargar y extraer chatnodejssocket.io y slim 
+
+Descargar archivo chat.sql
+
+importar base de datos dentro de una llamada chat
+
+En slim/index.php cambiar datos de mysql
+
+
+para chatnodejsscocket.io
+
+cd /nodejs
+
+instalamos express   sudo npm install express --save
+
+luego ponemos en consola node app.js 
+
+abrimos el navegador y escribimos localhost:3000
+
+se nos mostrara el chat.
+
+
+
+// en slim cree dos formularios uno para login y otro para registro 
+
+
+//localhost://slim/login.php
+
+//y 
+
+//localhost://slim/registro.html
+
+// que mandan a llamar /login y /registro respectivamente
