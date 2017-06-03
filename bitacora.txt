@@ -1,0 +1,139 @@
+intalacion de apache2
+	# apt-get install apache2
+
+habilitar apache2 para iniciar con el sistema
+	# systemctl enable apache2 
+
+intalacion de mysql
+	# apt-get install mysql-server mysql-client
+
+instalacion segura de mysql
+	# mysql_secure_installation
+
+habilitar mysql para iniciar con el sistema
+	# systemctl enable mysql
+
+verificar si esta corriendo el servicio de mysql
+	# systemctl status mysql
+
+instalar php
+	# apt-get install php5 php5-mysql libapache2-mod-php5
+	apt-get install libapache2-mod-php
+	apt-get install php-mysql
+
+archivo info
+
+	vim /var/www/html/info.php
+	<?php
+	phpinfo();
+	?>
+
+reiniciar el servicio
+	systemctl restart apache2
+
+instalar phpmyadmin
+	# apt-get install phpmyadmin
+
+ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+
+foreach ($array as $value) {
+    code to be executed;
+} 
+
+
+normalizacion 
+
+primer nivel
+
+	- eliminar los grupos repetitivos de la tabla individuales
+	- identificar cada grupo de datos relacionados con una clave primaria 
+
+segundo nivel 
+
+	- crear tablas separadas para aquellos grupos de datos que se aplican a varios registros
+	- relacionar estas tablas mediante una clave externa
+tercer nivel
+
+	 - eliminar aquellos campos que no dependan de la clave
+
+curto nivel
+
+	- en las relaciones varios - con - varios, entidades independientes no pueder ser 
+	almacenadas en la misma tabla
+
+quinto nivel
+	- rearmar la tabla original 
+password: Y0XpaeNsgSM5Ixn7
+usuario: rodrigo
+
+verificar querys,conexiones privilegios
+
+slim 2.6.2
+
+errores de ;   y   no cerrar ?> el doc php
+
+saber si el array esta vacio 
+
+	if(count($array)==0) 
+
+instalacion node js
+
+sudo apt-get install nodejs
+
+instalacion npm 
+
+	sudo apt-get install npm
+
+instalacion de express
+	
+	sudo npm install express --save
+
+instalacion de body-parser 
+
+	sudo npm install body-parser
+
+instalar method override
+
+	sudo npm install method-override
+
+installar conector de mysql 
+
+	sudo npm install mysql
+
+instalacion de jade para crear vistas
+
+	sudo npm install jade
+
+installar socket.io
+
+	sudo npm install socket.io
+
+error : XMLHttpRequest cannot load http://localhost:3000/listaAmigos/3. Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://127.0.0.1' is therefore not allowed access.
+se soluciono con
+
+"dataType" : "jsonp"
+
+Uncaught SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at Function.n.parseJSON (jquery.min.js:4)
+    at Object.<anonymous> (login.html:35)
+    at j (jquery.min.js:2)
+    at Object.fireWith [as resolveWith] (jquery.min.js:2)
+    at x (jquery.min.js:4)
+    at HTMLScriptElement.c (jquery.min.js:4)
+    at HTMLScriptElement.dispatch (jquery.min.js:3)
+    at HTMLScriptElement.r.handle (jquery.min.js:3)
+var objetos = jQuery.parseJSON(response);
+
+solucion 
+var objetos = jQuery.parseJSON(JSON.stringify(response));
+
+
+mandar a llamar la ruta de una api.
+
+	solo me funciono el cuando se manda a llamar mediante un boton.
+
+
+
+
+
